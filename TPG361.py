@@ -1,3 +1,5 @@
+
+# This is an API of Pfeiffer Vacuum TGP361 via socket or USB.
 # Python ver. 3.8.1
 # Ver  : 0.2 
 # Date : 2020/04/14 16:50
@@ -8,7 +10,7 @@ import sys,time,datetime
 
 class TPG361(object):
 
-	def __init__(self,adp="Ethernet",IP = "192.168.11.162",port = 8000):
+	def __init__(self,adp="Ethernet",IP = "192.168.100.83",port = 8000):
 	
 		self.adp = adp
 		if adp == "Ethernet" :
