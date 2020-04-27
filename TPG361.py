@@ -113,7 +113,7 @@ class TPG361(object):
         res = self.get_pressure(ch)
         
         if int(res[0]) == 0:
-            print("%s [%s]"%res[1],unit)
+            print("%s [%s]"%res[1],self.unit)
         elif int(res[0]) == 1:
             print(" ERROR !! Measure result is under-range. ")
         elif int(res[0]) == 2:
